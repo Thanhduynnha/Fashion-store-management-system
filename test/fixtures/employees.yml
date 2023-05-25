@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  EmID: 1
+  Name: MyString
+  Dob: 2023-05-25 14:21:12
+  Hometown: MyString
+  Phonenumber: 1
+  Email: MyText
+
+two:
+  EmID: 1
+  Name: MyString
+  Dob: 2023-05-25 14:21:12
+  Hometown: MyString
+  Phonenumber: 1
+  Email: MyText

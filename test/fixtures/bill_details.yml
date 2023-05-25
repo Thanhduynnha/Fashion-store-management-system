@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  EmID: 1
+  NameCus: MyString
+  Phonenumber: 1
+  Product: MyText
+
+two:
+  EmID: 1
+  NameCus: MyString
+  Phonenumber: 1
+  Product: MyText
