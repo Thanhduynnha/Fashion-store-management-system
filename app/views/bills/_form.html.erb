@@ -13,7 +13,7 @@
 
   <div class="mb-6">
         <%= form.label :EmID, class: label_class %>
-          <%= form.number_field :EmID, class: input_class %>
+          <%= form.select :EmID, options_from_collection_for_select(Employee.all,'id', 'EmID', selected= @bill.EmID), class: label_class %> 
       </div>
   <div class="mb-6">
         <%= form.label :NameCus, class: label_class %>
@@ -25,7 +25,11 @@
       </div>
   <div class="mb-6">
         <%= form.label :Product, class: label_class %>
-          <%= form.text_area :Product, class: input_class %>
+          <%= form.select :Product, options_from_collection_for_select(Skirt.all,'id', 'Fullname', selected= @bill.Product), class: label_class %>
+          <%= form.select :Product, options_from_collection_for_select(Dress.all,'id', 'Fullname', selected= @bill.Product), class: label_class %>
+          <%= form.select :Product, options_from_collection_for_select(Pant.all,'id', 'Fullname', selected= @bill.Product), class: label_class %>
+          <%= form.select :Product, options_from_collection_for_select(TShirt.all,'id', 'Fullname', selected= @bill.Product), class: label_class %>
+          <%= form.select :Product, options_from_collection_for_select(BlazerAndJacket.all,'id', 'Fullname', selected= @bill.Product), class: label_class %>
       </div>
 
 <%= form.submit class: button_class(theme: 'primary') %>
