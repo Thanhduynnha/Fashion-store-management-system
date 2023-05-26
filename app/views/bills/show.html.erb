@@ -1,0 +1,33 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Bill</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to bills_path, class: button_class(theme: "transparent") do %>
+      All Bills
+      <% end %>
+      <%= link_to edit_bill_path(@bill), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Emid:</p>
+        <p><%= @bill.EmID %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Namecus:</p>
+        <p><%= @bill.NameCus %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Phonenumber:</p>
+        <p><%= @bill.Phonenumber %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Product:</p>
+        <p><%= @bill.Product %></p>
+      </li>
+  </ul>
+</div>

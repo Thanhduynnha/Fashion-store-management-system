@@ -1,2 +1,0 @@
-class BlazerandJacket < ApplicationRecord
-end
